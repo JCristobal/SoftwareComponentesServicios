@@ -1,0 +1,6 @@
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/estado/EstadoApagado.java
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/estado/EstadoEncendido.java
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/estado/EstadoAcelerar.java
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/estado/Estado.java
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/controlador/controladorMotor.java
+/home/jcristobal/Escritorio/componente_maven/src/main/java/practica1/dss/estado/MaquinaEstados.java
