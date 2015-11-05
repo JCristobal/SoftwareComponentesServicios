@@ -4,7 +4,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 
@@ -12,4 +12,5 @@
 hs_err_pid*
 
 *~
-META-INF/
+#META-INF/
+basesDatos/
