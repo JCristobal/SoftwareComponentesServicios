@@ -4,22 +4,31 @@ package modelo;
  * @author jcristobal
  *
  */
+import java.io.Serializable;
 
-public class Usuario {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
+public class Usuario implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private long idUsuario;
-	private String email;
-	private String nombre;
-	private String apellido;	
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.TABLE)
+	private long idUsuario;
+	private String nombre;
+	private String apellido;
+	private String email;
+
 	/**
 	 * Constructor de un usuario vacío
 	 */
-	public Usuario (){
-		email = "";
-		nombre = "";
-		apellido = "";
+	public Usuario(){
+		
 	}
 	/**
 	 * Constructor de usuario según 3 parámetros
@@ -27,36 +36,32 @@ public class Usuario {
 	 * @param nombre nombre del usuario
 	 * @param apellido apellidos del usuario
 	 */
-	public Usuario (String email, String nombre, String apellido){
-		this.email = email;
+	public Usuario(String nombre, String apellido, String email){
 		this.nombre = nombre;
 		this.apellido = apellido;
-	}
+		this.email = email;
+	};
 	/**
-	 * Constructor del usuario seǵun 4 parámetros
-	 * @param email correo electrónico del usuario
-	 * @param nombre nombre del usuario
-	 * @param apellido apellidos del usuario
-	 * @param idUsuario identificador del usuario
+	 * Constructor de copia
+	 * @param us usuario a copiar
 	 */
-	public Usuario(String email, String nombre, String apellido, long idUsuario) {
-		this.email = email;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.idUsuario = idUsuario;
+	public Usuario(Usuario us){
+		this.nombre = us.nombre;
+		this.apellido = us.apellido;
+		this.email = us.email;
 	}
 
 	/**
 	 * @return identificador del usuario
 	 */
-	public long getIdUsuario() {
+	public long getIdUsuario(){
 		return idUsuario;
 	}
-
+	
 	/**
 	 * @param cambia el identificador del usuario
 	 */
-	public void setIdUsuario(long idUsuario) {
+	public void setIdUsuario(long idUsuario){
 		this.idUsuario = idUsuario;
 	}
 	
@@ -80,7 +85,7 @@ public class Usuario {
 	public String getNombre() {
 		return nombre;
 	}
-	
+
 	/**
 	 * @param cambia el nombre del usuario
 	 */
@@ -102,5 +107,13 @@ public class Usuario {
 		this.apellido = apellido;
 	}
 	
+	/**
+	 * 
+	 * @return datos del usuario: nombre, apellido y email
+	 */
+	@Override
+	public String toString(){
+		return nombre + " " + apellido + " " + email;
+	}
 	
 }
