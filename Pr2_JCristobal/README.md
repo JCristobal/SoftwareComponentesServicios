@@ -5,4 +5,4 @@ Aplicación para crear Listas de Correo (usando JPA) que utilizará un canal (DB
 
 La interfaz es la proporcionada por el profesor Manuel Isidoro Capel.
 
-El proyecto será *[Dynamic Web Project](http://stackoverflow.com/questions/5531402/newbie-in-eclipse-i-dont-have-dynamic-web-project-i-am-under-linux-ubuntu)* y la base de datos se guardará en el directorio "basesDatos/miBD2" (especificado en el archivo *persistence.xml*)
+El proyecto será *[Dynamic Web Project](http://stackoverflow.com/questions/5531402/newbie-in-eclipse-i-dont-have-dynamic-web-project-i-am-under-linux-ubuntu)*, [configurado para Apache](http://www.edu4java.com/es/servlet/servlet4.html) y la base de datos se guardará en el directorio "basesDatos/miBD2" (especificado en el archivo *persistence.xml*)
