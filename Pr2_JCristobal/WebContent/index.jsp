@@ -7,27 +7,24 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
-<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="JCristobal">
-    <!-- Bootstrap core CSS -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="JCristobal">
+	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/main.css" rel="stylesheet">
-</head>
+	</head>
 <body>	
 
 <div class="container">
-    	<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<div class="panel panel-login">
-				
-					
-					
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-12">
+    <div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="panel panel-login">				
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-12">
 							<h4 class="centrado"> Registrar usuario</h4>
 								<form  action="ListaCorreosServlet" method="post" role="form" style="display: block;">
 									<div class="form-group">
@@ -56,28 +53,24 @@
 									<div >
 										<input type="text" name="email" id="email" tabindex="5" class="form-control" placeholder="Email" value="">
 									</div>
+								</div>
+							    <div class="form-group" style="display: inline-block;">
+									<div >
+										<input type="hidden" name="action" value="seleccionarUsuario"/>
+										<input type="submit" name="login-submit" id="login-submit" tabindex="6" class="form-control btn btn-login" value="Buscar usuario"  >
 									</div>
-									    <div class="form-group" style="display: inline-block;">
-										<div  >
-											<div >
-												<input type="hidden" name="action" value="seleccionarUsuario"/>
-												<input type="submit" name="login-submit" id="login-submit" tabindex="6" class="form-control btn btn-login" value="Buscar usuario"  >
-											</div>
-										</div>
-									</div>
-									<br> </br>
-									<div class="form-group">
-										<c:if test="${not empty usuarios}">
-										
-											<div class="panel panel-default" >
-											  <div class="panel-body" style="padding: 7px 15px;">
+								</div>
+								<br> </br>
+								<div class="form-group">
+									<c:if test="${not empty usuarios}">
+										<div class="panel panel-default" >
+											<div class="panel-body" style="padding: 7px 15px;">
 											    <p> Nombre : <c:out value="${buscado.getNombre()}" />	</p>		
 											    <p> Apellido : <c:out value="${buscado.getApellido()}" />   </p>
-											  </div>
 											</div>
-
-										</c:if>
-									</div>
+										</div>
+									</c:if>
+								</div>
 								</div>	
 								</form>
 
