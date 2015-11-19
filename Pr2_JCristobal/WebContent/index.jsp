@@ -7,24 +7,28 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="JCristobal">
-	<!-- Bootstrap core CSS -->
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="JCristobal">
+    <!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="css/main.css" rel="stylesheet">
-	</head>
+
+</head>
 <body>	
 
 <div class="container">
-    <div class="row">
-		<div class="col-md-6 col-md-offset-3">
-			<div class="panel panel-login">				
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-lg-12">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+				
+					
+					
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
 							<h4 class="centrado"> Registrar usuario</h4>
 								<form  action="ListaCorreosServlet" method="post" role="form" style="display: block;">
 									<div class="form-group">
@@ -40,7 +44,7 @@
 										<div class="row">
 											<div class="col-sm-6 col-sm-offset-3">
 												<input type="hidden" name="action" value="insertar"/>
-												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Registrar">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Registrar" onclick="registrado()">
 											</div>
 										</div>
 									</div>
@@ -53,24 +57,29 @@
 									<div >
 										<input type="text" name="email" id="email" tabindex="5" class="form-control" placeholder="Email" value="">
 									</div>
-								</div>
-							    <div class="form-group" style="display: inline-block;">
-									<div >
-										<input type="hidden" name="action" value="seleccionarUsuario"/>
-										<input type="submit" name="login-submit" id="login-submit" tabindex="6" class="form-control btn btn-login" value="Buscar usuario"  >
 									</div>
-								</div>
-								<br> </br>
-								<div class="form-group">
-									<c:if test="${not empty usuarios}">
-										<div class="panel panel-default" >
-											<div class="panel-body" style="padding: 7px 15px;">
-											    <p> Nombre : <c:out value="${buscado.getNombre()}" />	</p>		
-											    <p> Apellido : <c:out value="${buscado.getApellido()}" />   </p>
+									    <div class="form-group" style="display: inline-block;">
+										<div  >
+											<div >
+												<input type="hidden" name="action" value="seleccionarUsuario"/>
+												<input type="submit" name="login-submit" id="login-submit" tabindex="6" class="form-control btn btn-login" value="Buscar usuario"  >
 											</div>
 										</div>
-									</c:if>
-								</div>
+									</div>
+									<br> </br>
+									<div class="form-group">
+										<c:if test="${not empty usuarios}">
+										
+											<div class="panel panel-default" >
+											  <div class="panel-body" style="padding: 7px 15px;">
+											    <p> Nombre : <c:out value="${buscado.getNombre()}" />	</p>		
+											    <p> Apellido : <c:out value="${buscado.getApellido()}" />   </p>
+											  
+											  </div>
+											</div>
+
+										</c:if>
+									</div>
 								</div>	
 								</form>
 
@@ -108,14 +117,14 @@
 						</td>
 						<td>
 							<input type="hidden" name="action" value="actualizar"/>
-							<input type="submit" value="Actualizar" class="btn btn-warning"/>
+							<input type="submit" value="Actualizar" class="btn btn-warning" onclick="actualizado()" />
 						</td>
 					</form>
 					<td>							
 						<form action="ListaCorreosServlet" method="post">
 							<input type="hidden" name="action" value="eliminar"/>
 							<input type="hidden" name="email" value="${u.getEmail()}"/>
-							<input type="submit" value="Eliminar" class="btn btn-danger" />
+							<input type="submit" value="Eliminar" class="btn btn-danger" onclick="borrado()" />
 						</form>
 					</td>
 				</tr>	
@@ -148,5 +157,17 @@
 
     });
     </script>
+
+    <script>
+		function registrado() {
+		    alert("Usuario registrado"); 
+		}
+		function actualizado() {
+		    alert("Datos del usuario actualizados");
+		}
+		function borrado() {
+		    alert("Usuario borrado");
+		}
+	</script>
 </body>
 </html>
