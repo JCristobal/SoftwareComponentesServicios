@@ -4,7 +4,7 @@ Contenidos de la asignatura de Desarrollo de Sistemas de Software basados en Com
 
 #### [Práctica 1](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica1): Interceptor-Componente usando el marco de trabajo JSF
 
-#### [Práctica 2 Tutorial](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica2%20Tutorial): Aplicación "tutorial" sobre JPA
+#### [Práctica 2 Tutorial](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica2%20Tutorial): Aplicación "tutorial" sobre JPA: almacenar y consultar datos en una pequeña BD
 
 #### [Práctica 2](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica2): Lista de correo según JPA
 
