@@ -7,3 +7,5 @@ Contenidos de la asignatura de Desarrollo de Sistemas de Software basados en Com
 #### [Práctica 2 Tutorial](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica2%20Tutorial): Aplicación "tutorial" sobre JPA
 
 #### [Práctica 2](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr2_JCristobal): Lista de correo según JPA
+
+#### [Práctica 3](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr3_JCristobal): Servicios Web (RESTful) y encapsulación de la persistencia
