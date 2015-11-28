@@ -4,6 +4,7 @@
 .mtj.tmp/
 
 # Package Files #
+# dejaremos las librerías, ya que algunos proyectos necesitan versiones de librerías específicas
 #*.jar
 *.war
 *.ear
