@@ -11,3 +11,7 @@ Contenidos de la asignatura de Desarrollo de Sistemas de Software basados en Com
 #### [Práctica BPEL](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica_BPEL): Especificación de un proceso de negocio con BPEL
 
 #### [Práctica 3](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica3): Servicios Web (RESTful) y encapsulación de la persistencia
+
+
+
+*Para consultar la documentación, en cada proyecto ve a Proyect > Generate Javadoc. En doc/ podrás verla.*
