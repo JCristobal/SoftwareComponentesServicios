@@ -20,6 +20,17 @@ Para crear el proyecto:
 
 3 - Dentro del IDE Eclipse, crear un nuevo proyecto BPEL y rellenamos la información que nos pide al avanzar con la ubicación del * servicio ODE recién creado* y de Tomcat.
 
-4 - Con el proyecto BPEL ya creado, creamos un nuevo *BPEL Process file* y se lo asignamos. Ya estaría el esqueleto creado (hasta este [commit]() )
+4 - Con el proyecto BPEL ya creado, creamos un nuevo *BPEL Process file* dentro de la carpeta *bpelContent* (en mi caso con la plantilla de proceso síncrono) y se lo asignamos. Ya estaría el "esqueleto" creado. )
+
+5 - Editado el proyecto hasta llegar a un solución (en el [primer caso](), una simple [asignación]() ).
+
+6 - En el archivo .wsdl asignamos la dirección de puerto a http://localhost:8080/ode/processes/negocio
+
+7 - Para desplegar el servicio: clicamos en el carpeta *bpelContent* y seleccionamos New > Others > BPEL 2.0 > BPEL Deployment Descriptor.
+
+8 - Arranacaremos el servidor ODE mediante Tomcat y consultamos, en mi caso, http://localhost:8080/ode/processes/negocio
+
+(nos da una excepción, ya que se ejecuta con SOAP en vez de HTML, lenguaje que interpreta el navegador)
+
 
 

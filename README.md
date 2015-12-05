@@ -8,6 +8,6 @@ Contenidos de la asignatura de Desarrollo de Sistemas de Software basados en Com
 
 #### [Práctica 2](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica2): Lista de correo según JPA
 
-#### [Práctica BPEL](): Especificación de un proceso de negocio con BPEL
+#### [Práctica BPEL](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica_BPEL): Especificación de un proceso de negocio con BPEL
 
 #### [Práctica 3](https://github.com/JCristobal/SoftwareComponentesServicios/tree/master/Pr%C3%A1ctica3): Servicios Web (RESTful) y encapsulación de la persistencia
