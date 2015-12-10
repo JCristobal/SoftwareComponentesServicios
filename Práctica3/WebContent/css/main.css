@@ -1,0 +1,30 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+
+
+.titulo{
+  text-align: center;
+  margin-top: 10px;
+  border-top-width: 1px;
+  border-top-style: outset;
+  padding-top: 10px;
+}
+
+.subtitulo{
+  margin-top: 20px;
+  text-align: center
+}
+
+.final{
+  margin-bottom: 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: outset;
+  padding-bottom: 5px;
+  border-color: #DCDCDC;
+}
