@@ -17,3 +17,5 @@ hs_err_pid*
 #META-INF/
 
 basesDatos/
+#Documentación generada con JavaDoc
+doc/

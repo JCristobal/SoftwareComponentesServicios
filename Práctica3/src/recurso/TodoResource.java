@@ -14,19 +14,24 @@ import javax.xml.bind.JAXBElement;
 
 import modelo.Todo;
 import modelo.TodoDao;
-
+/**
+ * 
+ * @author jcristobal
+ * Clase con los métodos para añadir, editar y borrar entradas.
+ * También métodos para contar el número de entradas y mostrar información individual
+ * 
+ */
 public class TodoResource {
 	@Context
 	UriInfo uriInfo;
 	
 	@Context
-	Request peticion; 
 	String id;
 	Request request;
 	
-	public TodoResource(UriInfo uriInfo, Request peticion, String id) {
+	public TodoResource(UriInfo uriInfo, Request request, String id) {
 		this.uriInfo = uriInfo;
-		this.request = peticion;
+		this.request = request;
 		this.id = id; 
 	}
 	
